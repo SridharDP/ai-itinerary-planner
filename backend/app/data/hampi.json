@@ -1,0 +1,141 @@
+{
+  "destination": "Hampi",
+  "places": [
+    {
+      "id": "virupaksha_temple",
+      "name": "Virupaksha Temple",
+      "category": "attraction",
+      "activity_type": "visit",
+      "best_time": ["morning"],
+      "time_required_hours": 1,
+      "reusable": false
+    },
+    {
+      "id": "matanga_hill",
+      "name": "Matanga Hill",
+      "category": "viewpoint",
+      "activity_type": "sunrise_view",
+      "best_time": ["sunrise"],
+      "time_required_hours": 1.5,
+      "local_tip": "Reach before 6 AM to avoid guards",
+      "reusable": false
+    },
+    {
+      "id": "hemakuta_hill",
+      "name": "Hemakuta Hill",
+      "category": "viewpoint",
+      "activity_type": "sunset_view",
+      "best_time": ["sunset"],
+      "time_required_hours": 1,
+      "reusable": true
+    },
+    {
+      "id": "hampi_bazaar_evening_walk",
+      "name": "Hampi Bazaar Evening Walk",
+      "category": "walk",
+      "activity_type": "walk",
+      "best_time": ["evening"],
+      "time_required_hours": 0.5,
+      "reusable": true
+    },
+    {
+      "id": "malyavanta_hill",
+      "name": "Malyavanta Hill",
+      "category": "viewpoint",
+      "activity_type": "sunset_view",
+      "best_time": ["sunset"],
+      "time_required_hours": 1,
+      "reusable": true
+    },
+    {
+      "id": "anegundi_village_experience",
+      "name": "Village Life Experience in Anegundi",
+      "category": "local_experience",
+      "activity_type": "exploration",
+      "best_time": ["afternoon"],
+      "time_required_hours": 2,
+      "reusable": false
+    },
+    {
+      "id": "midday_rest_cafe",
+      "name": "Midday Rest & Cafe Time",
+      "category": "rest",
+      "activity_type": "rest",
+      "best_time": ["afternoon"],
+      "time_required_hours": 1,
+      "reusable": true
+    },
+    {
+      "id": "tungabhadra_backwaters_walk",
+      "name": "Tungabhadra Backwaters Walk",
+      "category": "walk",
+      "activity_type": "scenic_walk",
+      "best_time": ["evening"],
+      "time_required_hours": 1,
+      "reusable": true
+    },
+    {
+      "id": "tungabhadra_dam",
+      "name": "Tungabhadra Dam",
+      "category": "attraction",
+      "activity_type": "explore",
+      "best_time": ["evening"],
+      "time_required_hours": 1.5,
+      "reusable": true
+    },
+    {
+      "id": "anjanadri_hills",
+      "name": "Anjanadri Hills",
+      "category": "attraction",
+      "activity_type": "hike",
+      "best_time": ["morning"],
+      "time_required_hours": 2,
+      "reusable": false
+    },
+    {
+      "id": "jollada_rashi_gudda",
+      "name": "Jollada Rashi Gudda",
+      "category": "viewpoint",
+      "activity_type": "scenic_view",
+      "best_time": ["morning", "evening"],
+      "time_required_hours": 1,
+      "reusable": true
+    }
+  ],
+  "food": [
+    {
+      "name": "Local North Karnataka Meals",
+      "best_time": ["lunch"],
+      "near": "Virupaksha Temple",
+      "food_type": "local"
+    },
+    {
+      "name": "Banana Leaf Breakfast",
+      "best_time": ["morning"],
+      "near": "Hampi Bazaar",
+      "food_type": "local"
+    },
+    {
+      "name": "Shridi Sai Tiffins",
+      "best_time": ["morning", "evening"],
+      "near": "Hospet Bus Stand",
+      "food_type": "tiffins"
+    },
+    {
+      "name": "Khadar Girmit",
+      "best_time": ["evening"],
+      "near": "VNC College, Hospet",
+      "food_type": "street_food"
+    }
+  ],
+  "stay_areas": [
+    {
+      "name": "Anegundi",
+      "vibe": "quiet, local, scenic"
+    },
+    {
+      "name": "Hampi Bazaar",
+      "vibe": "central, walkable"
+    }
+  ]
+}

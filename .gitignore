@@ -1,13 +1,35 @@
+# =====================
 # Environment variables
+# =====================
 .env
+backend/.env
+frontend/.env
 
+# =====================
 # Python
+# =====================
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .venv/
+env/
 
-# OS files
-.DS_Store
-
-# Node (later, for frontend)
+# =====================
+# Node / Frontend
+# =====================
 node_modules/
+.next/
+dist/
+
+# =====================
+# OS files
+# =====================
+.DS_Store
+Thumbs.db
+
+# =====================
+# Editor
+# =====================
+.vscode/
+.idea/
