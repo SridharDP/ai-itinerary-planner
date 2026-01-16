@@ -1,15 +1,12 @@
-from app.services.db import get_db_connection
+# import psycopg2
+# import os
+# from dotenv import load_dotenv
 
-def test_db_connection():
-    try:
-        conn = get_db_connection()
-        cur = conn.cursor()
-        cur.execute("SELECT 1;")
-        result = cur.fetchone()
-        conn.close()
-        print("✅ DB connection successful:", result)
-    except Exception as e:
-        print("❌ DB connection failed:", e)
+# load_dotenv()
 
-if __name__ == "__main__":
-    test_db_connection()
+# try:
+#     conn = psycopg2.connect(os.getenv("DATABASE_URL"), connect_timeout=5)
+#     conn.close()
+#     print("✅ DB connection successful")
+# except Exception as e:
+#     print("❌ DB connection failed:", e)

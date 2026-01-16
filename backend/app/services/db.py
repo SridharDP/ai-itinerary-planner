@@ -1,15 +1,9 @@
-import psycopg2
-import os
-from dotenv import load_dotenv
+# import psycopg2
+# import os
 
-load_dotenv()
-
-def get_db_connection():
-    return psycopg2.connect(
-        host=os.getenv("SUPABASE_DB_HOST"),
-        port=os.getenv("SUPABASE_DB_PORT"),
-        dbname=os.getenv("SUPABASE_DB_NAME"),
-        user=os.getenv("SUPABASE_DB_USER"),
-        password=os.getenv("SUPABASE_DB_PASSWORD"),
-        connect_timeout=5
-    )
+# def get_db_connection():
+#     return psycopg2.connect(
+#         os.getenv("DATABASE_URL"),
+#         connect_timeout=5,
+#         options="-c statement_timeout=3000"
+#     )
