@@ -17,6 +17,8 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/itinerary", tags=["itinerary"])
 
+MAX_DAYS = 7
+
 
 def normalize_itinerary(itinerary: dict) -> dict:
     for day in itinerary.get("days", []):
@@ -38,6 +40,13 @@ def normalize_itinerary(itinerary: dict) -> dict:
 
 @router.post("/generate", response_model=ItineraryResponse)
 def generate_itinerary(req: ItineraryRequest):
+    # 🔒 Guardrail: prevent wasteful DB + LLM calls
+    if req.days < 1 or req.days > MAX_DAYS:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Days must be between 1 and {MAX_DAYS}"
+        )
+
     destination = req.destination.lower()
 
     # 1️⃣ Fetch data (DB → cache fallback)
@@ -81,7 +90,7 @@ def generate_itinerary(req: ItineraryRequest):
 
     user_prompt = build_itinerary_prompt(req.dict(), data)
 
-    # 3️⃣ Call LLM with retry
+    # 3️⃣ Call LLM (with retry)
     try:
         llm_output = call_llm(system_prompt, user_prompt)
         parsed = safe_json_load(llm_output)
