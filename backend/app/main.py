@@ -14,7 +14,9 @@ app = FastAPI(
 # 2️⃣ Add middleware AFTER app exists
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["http://localhost:3000",
+    "https://ai-itinerary-planner-two.vercel.app/.app",
+    "https://ai-itinerary-planner-4u7i892tx-sridharps-projects.vercel.app"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
